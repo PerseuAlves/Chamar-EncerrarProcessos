@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Metodos {
-	
+
 	public Metodos() {
 		super();
 	}
@@ -56,7 +56,7 @@ public class Metodos {
 			}
 		}
 	}
-	
+
 	public void killProcessPID(String so, int PID) {
 		if (so.contains("Win")) {
 			String cmdPid = "TASKKILL /PID";
@@ -111,7 +111,7 @@ public class Metodos {
 			}
 		}
 	}
-	
+
 	public void killProcessNome(String so, String nome) {
 		if (so.contains("Win")) {
 			String cmdNome = "TASKKILL /IM";
@@ -162,7 +162,7 @@ public class Metodos {
 				Runtime.getRuntime().exec(buffer.toString());
 			} catch (Exception e) {
 				String msgError = e.getMessage();
-					System.err.println(msgError);
+				System.err.println(msgError);
 			}
 		}
 	}
